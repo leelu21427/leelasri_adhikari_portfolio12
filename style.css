@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('lightpurplebackgroundwithbubblesvector.jpg');
+  background-size: cover;        /* make it fill the entire viewport */
+  background-repeat: no-repeat;  /* prevent tiling */
+  background-attachment: fixed;  /* keeps image fixed while scrolling */
+  background-position: center;   /* center the image */
+}
+
+html {
+      scroll-padding-top: 70px; /* navbar height */
+      scroll-behavior: smooth;
+    }
+
+    nav.navbar {
+      background-color: black;
+    }
+
+    section {
+      height: 100vh;
+      padding: 20px;
+    }
+#home {
+
+  /* background-color: #f3e8ff; 
+  padding: 80px 20px; */
+  /* background-image: url("light-purple-background-with-bubbles-vector.jpg");  */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 80px 20px;
+      color: white;
+}
+
+/* Image styling with purple shadow */
+#home .intro-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px 5px rgba(121, 51, 153, 0.5); /* purple glow */
+  transition: transform 0.3s;
+}
+
+/* Slight zoom on hover for desktop */
+#home .intro-img:hover {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+#home .intro-text h1 {
+  color: #4B0082; /* dark purple heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#home .intro-text p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #home {
+    padding: 50px 15px;
+  }
+  #home .intro-text h1 {
+    font-size: 1.8rem;
+  }
+  #home .intro-img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+}
+#home .intro-btn {
+  background-color: #793399;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px; /* Added space below button */
+}
+#about .project-btn{
+  background-color: #793399;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+#about .project-btn:hover{
+  background-color: #5a2375;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+#home .intro-btn:hover {
+  background-color: #5a2375;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      #home {
+        padding: 50px 15px;
+      }
+      #home .intro-text h1 {
+        font-size: 1.8rem;
+      }
+      #home .intro-img {
+        max-width: 200px;
+      }
+    }
+/* About Section Background */
+#about {
+  /* background: url("light-purple-background-with-bubbles-vector.jpg") ; */
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  
+}
+
+/* Optional: add soft purple overlay for readability */
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(121, 51, 153, 0.1);
+  z-index: 0;
+}
+
+#about .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* About link color */
+.about-link {
+  color: #793399;
+  text-decoration: underline;
+}
+
+.about-link:hover {
+  color: #551a8b;
+}
+#home .theme-btn{
+  background-color: #793399;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+#home .theme-btn:hover{
+  background-color: #5a2375;
+  transform: scale(1.05);
+  color: white;
+  text-decoration: none;
+}
+.card {
+  border: 3px solid #793399;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(121, 51, 153, 0.6); /* purple glow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(121, 51, 153, 0.9);
+}
+.card-img-top {
+  border: 1px solid #793399;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Make all cards the same height */
+.card.h-100 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Uniform image size */
+.uniform-img {
+  width: 100%;      /* full width of the card */
+  height: 200px;    /* fixed height for all images */
+  object-fit: cover; /* maintain aspect ratio, crop overflow */
+  border-radius: 15px;
+}
+.btn-purple {
+  background-color:  #793399;; /* replace with your purple if different */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-purple:hover {
+  background-color:  #793399; /* slightly darker on hover */
+  color: #fff;
+}
+.card h5,p {
+  color: black;
+}
+.back-btn,.back-icon {
+      background-color:  #793399; /* purple button */
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      display: inline-block;
+      margin: 1rem;
+    }
+    .back-btn,.back-icon:hover {
+      background-color:  #793399; /* darker purple on hover */
+      color: white;
+    }
+ .project-img {
+  width: 100%;
+  height:100%;
+  display: block;
+  object-fit: cover; /* image fills container */
+  border-radius: 0.25rem;
+}
+
+.project-media {
+  width: 100%;
+  height:100%;
+  display: block;
+  object-fit: cover; /* image fills container */
+  border-radius: 0.25rem;
+}
+.project-link-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #793399,  #793397);
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.project-link-btn:hover {
+  background: linear-gradient(135deg,#793399,  #793397);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+  color: #fff;
+}
+
+.project-link-btn i {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.skills-section {
+      background-color: #e6d7f7;
+      padding: 50px 20px;
+      border-radius: 10px;
+    }
+
+    /* Section Titles */
+    .section-title {
+      background-color:#793399; /* Dark Purple */
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      display: inline-block;
+    }
+
+    /* Progress Bar Styles */
+    .progress {
+      /* height: 3px; */
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      background-color:#793399; /* Dark Purple for all bars */
+    }
+
+    /* Skill Row */
+    .skill-item i {
+      font-size: 1rem;
+      color: #793399;
+    }
+
+    .skill-item span {
+      font-weight: 500;
+    }
+  @media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  .uniform-img {
+    height: 150px;
+  }
+}
+/* Hobbies Section Styling */
+#hobbies {
+  background-color: #f7f4ff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Hobby Card */
+.hobby-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(121, 51, 153, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(121, 51, 153, 0.25);
+}
+
+/* Hobby Image */
+.hobby-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption */
+.hobby-card p {
+  font-weight: 500;
+  color: #793399;
+  font-size: 1rem;
+}
+.masonry-grid {
+  column-count: 4; /* number of columns on large screens */
+  column-gap: 15px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(121, 51, 153, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(121, 51, 153, 0.3);
+}
+
+/* Image Styling */
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
